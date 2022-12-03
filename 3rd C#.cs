@@ -5,12 +5,12 @@ using UnityEngine;
 public class Test : MonoBehaviour
 
     /* 
-    Insted of creating below field and property, we can create auto-property...
+    Instead of creating below field and property, we can create auto-property...
     */
 {
     // Creating auto-property...
 
-    public PlayerHealth { get; set; }
+    // public PlayerHealth { get; set; }
 
     private int _playerHealth = 100;  // field
 
