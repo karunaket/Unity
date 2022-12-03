@@ -5,7 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 
 {
-    private Rigidbody2D _rb;  // _rb is the empty container that needs to contain Rigidbody2D components...
+    private Rigidbody2D _rb;  // private Rigidbody2D _rb; is the field and _rb is the empty container that needs to contain Rigidbody2D components...
 
     [SerializeField] private int _playerHealth = 100;
 
