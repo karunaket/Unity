@@ -55,7 +55,7 @@ private int _playerHealth = 100;
         return PlayerHealth;
     }
     
-    Boolean ShowDaamage()
+    bool ShowDaamage()
     {
         return true;
     }
