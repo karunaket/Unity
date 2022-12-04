@@ -1,11 +1,10 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    private int _playerHealth = 100;
+private int _playerHealth = 100;
 
     public int PlayerHealth
     {
@@ -50,15 +49,15 @@ public class Test : MonoBehaviour
         PlayerHealth -= damage; // PlayerHealth = PlayerHealth - damage;
     }
 
-    /* int ShowDamage()  // Returns data
+    int ShowDamage()  // Returns data
     {
-        PlayerHealth -= 10;
-        return PlayerHealth;  // 10 or integer cuz ShowDamage is a method that returns integer...
+        PlayerHealth -= 10;  // 10 or integer cuz ShowDamage is a method that returns integer...
+        return PlayerHealth;
     }
     
-    /* Boolean ShowDaamage()
+    Boolean ShowDaamage()
     {
         return true;
-    } */
+    }
 
 }
