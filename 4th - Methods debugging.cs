@@ -5,10 +5,6 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // Creating auto-property...
-
-    // public PlayerHealth { get; set; }
-
     private int _playerHealth = 100;
 
     public int PlayerHealth
