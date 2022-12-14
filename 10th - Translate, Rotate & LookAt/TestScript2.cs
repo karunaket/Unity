@@ -12,7 +12,7 @@ public class TestScript2 : MonoBehaviour
         Vector2 direction = target.position - transform.position;
 
         /* 
-           This will say the gameObject at which it is attached to to rotate a certain direction based on the offset...
+        This will say the gameObject at which it is attached to to rotate a certain direction based on the offset...
         */
 
 
