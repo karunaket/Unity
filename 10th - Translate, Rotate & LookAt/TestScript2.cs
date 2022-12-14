@@ -12,7 +12,7 @@ public class TestScript2 : MonoBehaviour
         Vector2 direction = target.position - transform.position;
 
         /* 
-        This will say the gameObject at which it is attached to to rotate a certain direction based on the offset...
+        This will say the gameObject at which it is attached to to rotate at a certain direction based on the offset...
         */
 
 
@@ -20,7 +20,7 @@ public class TestScript2 : MonoBehaviour
         {
 
             transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
-            // new Vector3(0, 1, 0) === Vector3.up/down/ left/right/ back/forward
+            // new Vector3(0, 1, 0)  ===  Vector3.up/down/ left/right/ back/forward
 
 
             // Rotates the gameObject from a certain location to a new location...
