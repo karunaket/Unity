@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyBehaviour : MonoBehaviour
 {
@@ -14,10 +15,13 @@ public class EnemyBehaviour : MonoBehaviour
     bool _disableEnemy = false;
     Vector2 _moveDirection;
 
+    private ScoreManager scoreManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        scoreManager = GameObject.Find("Canvas").GetComponent<ScoreManager>();
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         _player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -55,6 +59,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
+
             StartCoroutine(Damaged());
 
             _enemyHealth -= 40f;
@@ -62,6 +67,7 @@ public class EnemyBehaviour : MonoBehaviour
             if (_enemyHealth <= 0f)
             {
                 Destroy(gameObject);
+                scoreManager.score += 1f;
             }
 
             Destroy(collision.gameObject);
